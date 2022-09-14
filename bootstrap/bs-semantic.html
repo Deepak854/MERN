@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+        }
+
+        h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+        .lnk{
+            display: flex;
+            list-style: none;
+            padding: 0 10px;
+        }
+
+        .grid-item-1{
+            grid-area: header;
+            background-color: #F637EC;
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+            padding: 0 auto;
+
+        }
+        .grid-item-2{
+            grid-area: main;
+            background-color: aliceblue;
+            padding: 0 15px;
+        }
+        .grid-item-3{
+            grid-area: rsidebar;
+            background-color: #F637EC;
+        }
+        .grid-item-4{
+            grid-area: footer;
+            background-color: aliceblue;
+            padding: 0 10px;
+        }
+        .container{
+            background-color: grey;
+            display: grid;
+            grid-template-areas: 
+            "header header header header header"
+            "main main main main rsidebar"
+            "footer footer footer footer footer";
+            padding: 10px;
+            gap: 10px;
+        }
+        
+        .container > div {
+            background-color: aliceblu;
+        }
+        
+        .rlnk{
+            text-decoration: underline;
+            color: blue;
+           
+        }
+        li{
+            margin: 10px;
+        }
+        .go{
+            background-color: black;
+            color: aliceblue;
+            width: 80px;
+            height: 25px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Semantic Task
+    </h1>
+    <hr>
+    <div class="container">
+        <div class="grid-item-1">
+            <nav class="nav">
+                <ul class="lnk">
+                    <li>Home</li>
+                    <li>Our Team</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                    <input type="search" placeholder="search-query">
+                    <li class="go">Go</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="grid-item-2">
+            <center><h1>Article Heading</h1></center>
+            <p class="article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Consequatur non autem quis. Obcaecati impedit veniam reprehenderit ipsum autem 
+                quas recusandae perspiciatis exercitationem? Nesciunt, voluptatibus</p>
+
+            <section>
+                <h2>Subsection</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Nesciunt molestias aperiam architecto molestiae harum rem similique min
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Nesciunt molestias aperiam architecto molestiae harum rem similique min
+                </p>
+            </section>
+            <section>
+                <h2>Another subsection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Nesciunt molestias aperiam architecto molestiae harum rem similique min
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Nesciunt molestias aperiam architecto molestiae harum rem similique min
+                </p>
+            </section>
+        </div>
+
+        <div class="grid-item-3">
+            <aside>
+                <center><h1>Related</h1></center>
+            <ul class="rlnk">
+                <li class="sidebar-list">Oh I do like to beside the seaside</li>
+                <li class="sidebar-list">Oh I do like to beside the sea</li>
+                <li class="sidebar-list">Although in the north of England</li>
+                <li class="sidebar-list">It never stops raining</li>
+                <li class="sidebar-list">Oh well..</li>
+            </ul>
+            </aside>
+        </div>
+
+        <div class="grid-item-4">
+            <footer>
+                <p>©Copyright 2050 by Nobody. All rights reserved.</p>
+            </footer>
+        </div>
+
+    </div>
+    
+</body>
+</html>

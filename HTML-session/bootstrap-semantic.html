@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Semantic task</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #a9a9a9;
+      }
+      h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      header > h1 {
+        color: #fff;
+        font-size: 40px;
+      }
+
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+
+      .item-1 {
+        grid-area: navbar;
+      }
+
+      .item-2 {
+        grid-area: main;
+      }
+
+      .item-3 {
+        grid-area: rsidebar;
+      }
+
+      .item-4 {
+        grid-area: footer;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "navbar navbar navbar navbar navbar navbar"
+          "main main main main rsidebar rsidebar"
+          "footer footer footer footer footer footer";
+        gap: 10px;
+        padding: 10px;
+      }
+
+      main {
+        padding: 0 10%;
+      }
+      header > h1 {
+        text-align: center;
+      }
+      header {
+        margin-top: 20px;
+      }
+      .nav {
+        background-color: #FF6FB5;
+        padding: 20px;
+      }
+      .nav-items {
+        display: inline;
+        padding: 60px;
+      }
+      .search-box {
+        padding: 5px;
+      }
+      article {
+        background-color: #fff;
+        padding: 15px;
+      }
+      article > h1 {
+        text-align: center;
+      }
+      .article-content {
+        align-items: center;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      section > p {
+        margin-bottom: 10px;
+      }
+
+      .item-3 {
+        background-color: #FF6FB5;
+      }
+      aside {
+        padding: 15px;
+        justify-content: center;
+      }
+      aside h1 {
+        text-align: center;
+      }
+      aside > ul {
+        padding: 10px;
+      }
+      .sidebar-list {
+        color: whitesmoke;
+        text-decoration: underline;
+        padding: 10px;
+      }
+      footer {
+        background-color: #fff;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <div class="grid-container">
+        <div class="item-1">
+          <nav class="nav">
+            <ul>
+              <li class="nav-items">HOME</li>
+              <li class="nav-items">OUR TEAM</li>
+              <li class="nav-items">PROJECTS</li>
+              <li class="nav-items">CONTACT</li>
+              <li class="nav-items">
+                <input
+                  type="text"
+                  placeholder="Search Query"
+                  class="search-box"
+                />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="item-2">
+          <article>
+            <h1>Article Heading</h1>
+            <p class="article-content">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+               It has roots in a piece of classical Latin literature from 45 BC, 
+               making it over 2000 years old. Richard McClintock, a Latin professor 
+               at Hampden-Sydney College in Virginia, looked up one of the more 
+               obscure Latin words
+            </p>
+            <section>
+              <h2>Subsection</h2>
+              <p>
+                
+               The standard chunk of Lorem Ipsum used since the 1500s is
+                reproduced below for those interested. Sections 1.10.32 and 
+                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are 
+                also reproduced in their exact original form
+              </p>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text.
+               It has roots in a piece of classical Latin literature from 45 BC, 
+               making it over 2000 years old. Richard McClintock, a Latin professor 
+               at Hampden-Sydney College in Virginia, looked up one of the more 
+               obscure Latin words
+              </p>
+            </section>
+            <section>
+              <h2>Another Section</h2>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text.
+               It has roots in a piece of classical Latin literature from 45 BC, 
+               making it over 2000 years old. Richard McClintock, a Latin professor 
+               at Hampden-Sydney College in Virginia, looked up one of the more 
+               obscure Latin words
+              </p>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text.
+               It has roots in a piece of classical Latin literature from 45 BC, 
+               making it over 2000 years old. Richard McClintock, a Latin professor 
+               at Hampden-Sydney College in Virginia, looked up one of the more 
+               obscure Latin words
+              </p>
+            </section>
+          </article>
+        </div>
+        <div class="item-3">
+          <aside>
+            <h1>Related</h1>
+            <ul>
+              <li class="sidebar-list">Oh I do like to beside the seaside</li>
+              <li class="sidebar-list">Oh I do like to beside the sea</li>
+              <li class="sidebar-list">Although in the north of England</li>
+              <li class="sidebar-list">It never stops raining</li>
+              <li class="sidebar-list">Oh well..</li>
+            </ul>
+          </aside>
+        </div>
+        <div class="item-4">
+          <footer>
+            <p>©Copyright 2050 by Nobody. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>  
+    
+</body>
+</html>

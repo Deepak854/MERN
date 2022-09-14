@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        .box{
+            border: 5px solid yellowgreen;
+            background-color: darkgray;
+            padding: 40px;
+            margin: 40px;
+            width: 300px;
+            height: 150px;
+        }
+        .alternate{
+            box-sizing: border-box;
+        }
+        p, ul{
+            border: 2px solid palevioletred;
+            padding: 8px;
+        }
+        .block, li{
+            border: 2px solid rebeccapurple;
+            padding: .5em;
+            margin: 2px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        .block{
+            display: flex;
+            margin-top: .5em;
+        }
+    </style>
+    
+</head>
+<body>
+    <header><h1>CSS BOX MODEL</h1></header>
+
+    <section>
+        <div class="box">I use the standard box model</div>
+        <div class="alternate box">Alternate box model</div>
+    </section>
+
+    <p>I am a paragraph. right now finding space for me .can yoy help me out</p>
+
+    <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+    </ul>
+
+    <p>I am another paragraph. some of the <span class="block">words</span> have been wraped in the <span class="block">span element</span></p>
+    
+</body>
+</html>

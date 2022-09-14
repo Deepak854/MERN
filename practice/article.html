@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f9f1f1;
+        }
+        .nav{
+            background-color: black;
+            color: bisque;
+            padding: 20px;
+            
+        }
+        .nav li{
+            display: inline;
+            padding: 60px;
+            font-size: 30px;
+        }
+        .nav li input{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .item-1{
+            grid-area: navbar;
+        }
+        .item-2{
+            grid-area: main;
+            background-color: brown;
+        }
+        .item-3{
+            grid-area: rsidebar;
+            background-color: crimson;
+        }
+        .item-4{
+            grid-area: footer;
+            background-color: bisque;
+        }
+        h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      
+      .grid-conatiner{
+        display: grid;
+        grid-template-areas: 
+        "navbar navbar navbar navbar navbar"
+        "main main main main rsidebar"
+        "footer footer footer footer footer";
+      }
+      .grid-conatiner div{
+        display: flex;
+      }
+      article > h1{
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+      }
+     .content{
+        align-items: center;
+        
+     }
+     section{
+        padding: 15px;
+     }
+
+       
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+            <div class="item-1">
+                <nav class="nav">
+                    <ul>
+                        <li>Home</li>
+                        <li>Our team</li>
+                        <li>Project</li>
+                        <li>Contact</li>
+                        <li><input type="text" placeholder="search"> GO</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-2">
+                <article>
+                    <h1>Article</h1>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Voluptas nobis quidem vitae,
+                        odit tempora ut in consectetur modi temporibus
+                        ipsum non reiciendis? Voluptatibus a rem est ipsa 
+                        consectetur cum eos!
+                    </p>
+
+                    <section>
+                        <h2>section</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                            elit. Hic nobis sed ullam tenetur quasi eaque, 
+                            veritatis atque nam fuga repellendus aperiam at 
+                            cum laborum ducimus blanditiis omnis eligendi sunt? Enim!</p>
+                    </section>
+                    <section>
+                        <h2>Subsection</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Cum, soluta consequuntur obcaecati autem earum
+                            corporis officia at neque consequatur, libero,
+                            quaerat aspernatur explicabo quam voluptatum eum 
+                            culpa unde vitae accusamus!
+                        </p>
+                    </section>
+                </article>
+                <div class="item-3">
+                    <h1>Related</h1>
+                    <ul>
+                        <li>Oh I do like to beside the seaside</li>
+                        <li>Oh I do like to beside the sea</li>
+                        <li>Although in the north of England</li>
+                        <li>It never stop raining</li>
+                        <li>Oh well</li>
+                    </ul>
+
+                </div>
+                <div class="item-4">
+                    <footer>
+                        <p>©Copyright 2050 by Nobody. All rights reserved.</p>
+                    </footer>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+        
+    
+</body>
+</html>
